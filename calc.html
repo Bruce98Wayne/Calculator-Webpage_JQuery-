@@ -11,12 +11,23 @@
         button {
             font-size: 200%;
             width: 40px;
+            background-color: orange;
+            color: yellow;
         }
 
+        .buttonNum {
+            background-color: orange;
+        }
+
+        .buttonArr{
+            background-color: coral;
+        }
         input {
             font-size: 14px;
             height: 40px;
             text-align: right;
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
@@ -24,63 +35,63 @@
 <table>
     <tr>
         <td colspan="4">
-            <input id="display" name="display" disabled></input>
+            <input id="display" name="display" disabled>
         </td>
     </tr>
     <tr>
         <td>
-            <button id="button1" value= 1>1</button>
+            <button id="button1" value= 1 class="buttonNum">1</button>
         </td>
         <td>
-            <button id="button2" value=2>2</button>
+            <button id="button2" value=2 class="buttonNum">2</button>
         </td>
         <td>
-            <button id="button3" value=3>3</button>
+            <button id="button3" value=3 class="buttonNum">3</button>
         </td>
         <td>
-            <button id="addButton" value =+>+</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button id="button4" value=4>4</button>
-        </td>
-        <td>
-            <button id="button5" value=5>5</button>
-        </td>
-        <td>
-            <button id="button6" value=6>6</button>
-        </td>
-        <td>
-            <button id="subtractButton" value=->-</button>
+            <button id="addButton" value = class="buttonArr"+>+</button>
         </td>
     </tr>
     <tr>
         <td>
-            <button id="button7" value=7>7</button>
+            <button id="button4" value=4 class="buttonNum">4</button>
         </td>
         <td>
-            <button id="button8" value=8 >8</button>
+            <button id="button5" value=5 class="buttonNum">5</button>
         </td>
         <td>
-            <button id="button9" value=9>9</button>
+            <button id="button6" value=6 class="buttonNum">6</button>
         </td>
         <td>
-            <button id="multiplyButton" value=*>*</button>
+            <button id="subtractButton" value=- class="buttonArr">-</button>
         </td>
     </tr>
     <tr>
         <td>
-            <button id="clearButton">C</button>
+            <button id="button7" value=7 class="buttonNum">7</button>
         </td>
         <td>
-            <button id="button0" value=0>0</button>
+            <button id="button8" value=8 class="buttonNum" >8</button>
         </td>
         <td>
-            <button id="equalsButton">=</button>
+            <button id="button9" value=9 class="buttonNum">9</button>
         </td>
         <td>
-            <button id="divideButton" value=/>&#247;</button>
+            <button id="multiplyButton" value=* class="buttonArr">*</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button id="clearButton" class="buttonArr">C</button>
+        </td>
+        <td>
+            <button id="button0" value=0 class="buttonNum">0</button>
+        </td>
+        <td>
+            <button id="equalsButton" class="buttonArr">=</button>
+        </td>
+        <td>
+            <button id="divideButton" value=/ class="buttonArr">&#247;</button>
         </td>
     </tr>
 </table>
