@@ -8,6 +8,18 @@
     </script>
     <script src="jquery.js"></script>
     <style>
+
+        .tbl{
+            border: rebeccapurple;
+            background-color: dimgrey;
+            border-style: ridge;
+        }
+
+        body{
+
+            font-family: "Times New Roman", Georgia;
+        }
+
         button {
             font-size: 200%;
             width: 40px;
@@ -32,10 +44,10 @@
     </style>
 </head>
 <body>
-<table>
+<table class="tbl">
     <tr>
         <td colspan="4">
-            <input id="display" name="display" disabled>
+            <input id="display" name="display" disabled></input>
         </td>
     </tr>
     <tr>
@@ -49,7 +61,7 @@
             <button id="button3" value=3 class="buttonNum">3</button>
         </td>
         <td>
-            <button id="addButton" value = class="buttonArr"+>+</button>
+            <button id="addButton" value =+ class="buttonArr">+</button>
         </td>
     </tr>
     <tr>

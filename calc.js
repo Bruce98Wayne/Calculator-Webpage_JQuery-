@@ -30,6 +30,10 @@ if(check ===0){
 for(var i=0; i<10; i++){
     numArr[i].click(function(){
 
+        if(parseInt(display.val()) >= 10000000000000002){
+            display.val('Overflow!!')
+        }
+
         if((!/\d/.test(display.val()))  && check===0){
             display.val(parseInt($(this).val()));
         }
